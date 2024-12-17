@@ -12,7 +12,7 @@ const Testimonios = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Testimonio 1 */}
         <div className="testimonial-card group relative overflow-hidden rounded-lg shadow-lg p-6 transition-all duration-300 hover:scale-105">
-          <p className="text-lg text-[#333] italic">"El diseño y funcionalidad de nuestra web con Purpura Development ha sido increíble. Gracias a su trabajo, las ventas de CasaLuz han aumentado significativamente, y la experiencia de usuario es mucho más fluida."</p>
+          <p className="text-lg text-[#333] italic">El diseño y funcionalidad de nuestra web con Purpura Development ha sido increíble. Gracias a su trabajo, las ventas de CasaLuz han aumentado significativamente, y la experiencia de usuario es mucho más fluida.</p>
           <div className="mt-4 flex items-center">
             {/* Imagen de quien dijo el testimonio */}
             <div className="w-12 h-12 rounded-full overflow-hidden">
@@ -40,7 +40,7 @@ const Testimonios = () => {
 
         {/* Testimonio 2 */}
         <div className="testimonial-card group relative overflow-hidden rounded-lg shadow-lg p-6 transition-all duration-300 hover:scale-105">
-          <p className="text-lg text-[#333] italic">"El equipo de Purpura Development nos ayudó a mejorar la experiencia de nuestros usuarios con una aplicación más rápida y eficiente. ¡Estamos muy contentos con los resultados!"</p>
+          <p className="text-lg text-[#333] italic">El equipo de Purpura Development nos ayudó a mejorar la experiencia de nuestros usuarios con una aplicación más rápida y eficiente. ¡Estamos muy contentos con los resultados!</p>
           <div className="mt-4 flex items-center">
             {/* Imagen de quien dijo el testimonio */}
             <div className="w-12 h-12 rounded-full overflow-hidden">
@@ -68,7 +68,7 @@ const Testimonios = () => {
 
         {/* Testimonio 3 */}
         <div className="testimonial-card group relative overflow-hidden rounded-lg shadow-lg p-6 transition-all duration-300 hover:scale-105">
-          <p className="text-lg text-[#333] italic">"Trabajar con Purpura Development nos permitió optimizar nuestras operaciones internas y mejorar la comunicación dentro de nuestro equipo. Estamos muy agradecidos por su apoyo y dedicación."</p>
+          <p className="text-lg text-[#333] italic">Trabajar con Purpura Development nos permitió optimizar nuestras operaciones internas y mejorar la comunicación dentro de nuestro equipo. Estamos muy agradecidos por su apoyo y dedicación.</p>
           <div className="mt-4 flex items-center">
             {/* Imagen de quien dijo el testimonio */}
             <div className="w-12 h-12 rounded-full overflow-hidden">
