@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link'; // Asegúrate de importar Link de Next.js
 
 const SobreNosotros = () => {
@@ -12,7 +11,7 @@ const SobreNosotros = () => {
 
       <div className="flex flex-col lg:flex-row items-center justify-between mb-16">
         <div className="lg:w-1/2 mb-8 lg:mb-0">
-          <Image
+          <img
             src="/images/team.png" // Imagen del equipo
             alt="Nuestro equipo"
             width={500}

@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 const Testimonios = () => {
   return (
@@ -16,7 +15,7 @@ const Testimonios = () => {
           <div className="mt-4 flex items-center">
             {/* Imagen de quien dijo el testimonio */}
             <div className="w-12 h-12 rounded-full overflow-hidden">
-              <Image
+              <img
                 src="/images/victor.jpg" // Imagen del cliente
                 alt="Victor Cadete"
                 width={48}
@@ -44,7 +43,7 @@ const Testimonios = () => {
           <div className="mt-4 flex items-center">
             {/* Imagen de quien dijo el testimonio */}
             <div className="w-12 h-12 rounded-full overflow-hidden">
-              <Image
+              <img
                 src="/images/yeni.jpeg" // Imagen del cliente
                 alt="Yeni Alvarez"
                 width={48}

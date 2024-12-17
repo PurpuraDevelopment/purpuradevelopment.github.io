@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link'; // Importa el componente Link
 
 export default function Portfolio() {
@@ -15,7 +14,7 @@ export default function Portfolio() {
         {/* Proyecto 1: SociosConectados */}
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:scale-105">
           <div className="absolute inset-0 bg-black bg-opacity-30 blur-md z-10"></div>
-          <Image
+          <img
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             src="/images/sociosconectados.jpeg" // Ruta de la imagen del proyecto
             alt="SociosConectados"
@@ -28,7 +27,7 @@ export default function Portfolio() {
           {/* Dueño del proyecto */}
           <div className="absolute bottom-4 left-4 flex items-center space-x-2 z-30">
             <div className="w-10 h-10 rounded-full overflow-hidden">
-              <Image
+              <img
                 src="/images/luis.jpg" // Imagen del dueño
                 alt="Luis Estrella"
                 width={40}
@@ -45,7 +44,7 @@ export default function Portfolio() {
         {/* Proyecto 2: VariedadesNY */}
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:scale-105">
           <div className="absolute inset-0 bg-black bg-opacity-30 blur-md z-10"></div>
-          <Image
+          <img
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             src="/images/variedades.jpeg" // Ruta de la imagen del proyecto
             alt="VariedadesNY"
@@ -58,7 +57,7 @@ export default function Portfolio() {
           {/* Dueño del proyecto */}
           <div className="absolute bottom-4 left-4 flex items-center space-x-2 z-30">
             <div className="w-10 h-10 rounded-full overflow-hidden">
-              <Image
+              <img
                 src="/images/yeni.jpeg" // Imagen del dueño
                 alt="Yeni Alvarez"
                 width={40}
@@ -75,7 +74,7 @@ export default function Portfolio() {
         {/* Proyecto 3: CasaLuz */}
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:scale-105">
           <div className="absolute inset-0 bg-black bg-opacity-30 blur-md z-10"></div>
-          <Image
+          <img
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             src="/images/casaluz.jpeg" // Ruta de la imagen del proyecto
             alt="CasaLuz"
@@ -88,7 +87,7 @@ export default function Portfolio() {
           {/* Dueño del proyecto */}
           <div className="absolute bottom-4 left-4 flex items-center space-x-2 z-30">
             <div className="w-10 h-10 rounded-full overflow-hidden">
-              <Image
+              <img
                 src="/images/victor.jpg" // Imagen del dueño
                 alt="Victor Cadete"
                 width={40}
