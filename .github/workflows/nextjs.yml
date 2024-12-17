@@ -1,11 +1,8 @@
 name: Deploy Next.js site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 permissions:
@@ -18,7 +15,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -28,17 +24,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"  # Cache npm dependencies for faster builds
+          cache: "npm"
       - name: Install dependencies
         run: npm install
       - name: Build with Next.js
-        run: npm run build && npm run export  # Use npm run scripts for build and export
+        run: npm run build  # Sólo ejecutar build, ya no es necesario exportar manualmente
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
