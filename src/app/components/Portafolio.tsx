@@ -8,7 +8,7 @@ export default function Portfolio() {
         <h2 className="text-4xl font-bold text-[#6A0DAD] mb-4">Nuestro Portafolio</h2>
         <p className="text-lg text-[#333] mb-8">Proyectos destacados que demuestran nuestra innovación y compromiso.</p>
         {/* Slogan */}
-        <p className="text-lg text-[#6A0DAD] italic">"La innovación es nuestro motor y la calidad nuestra misión"</p>
+        <p className="text-lg text-[#6A0DAD] italic">La innovación es nuestro motor y la calidad nuestra misión</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
