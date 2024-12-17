@@ -10,7 +10,7 @@ export default function Hero() {
     >
       <div className="max-w-4xl">
         <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in">
-          Púrpura Development
+          Purpura Development
         </h1>
         <p className="text-lg md:text-2xl mb-8">
           Innovación y seguridad en un solo lugar

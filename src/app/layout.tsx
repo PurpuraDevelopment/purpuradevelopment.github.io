@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Púrpura Development",
+  title: "Purpura Development",
   description: "Innovación y seguridad en un solo lugar",
 };
 
