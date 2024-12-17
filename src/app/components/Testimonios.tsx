@@ -72,9 +72,9 @@ const Testimonios = () => {
           <div className="mt-4 flex items-center">
             {/* Imagen de quien dijo el testimonio */}
             <div className="w-12 h-12 rounded-full overflow-hidden">
-              <Image
+              <img
                 src="/images/luis.jpg" // Imagen del cliente
-                alt="Luis Gómez"
+                alt="Luis Estrella"
                 width={48}
                 height={48}
                 className="object-cover"
