@@ -79,7 +79,7 @@ const Contacto = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full p-3 mt-2 border rounded-lg focus:outline-none focus:border-[#6A0DAD]"
+                className="w-full p-3 mt-2 border rounded-lg focus:outline-none text-[#333] focus:border-[#6A0DAD]"
                 required
               />
             </div>
@@ -92,7 +92,7 @@ const Contacto = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-3 mt-2 border rounded-lg focus:outline-none focus:border-[#6A0DAD]"
+                className="w-full p-3 mt-2 border rounded-lg focus:outline-none text-[#333] focus:border-[#6A0DAD]"
                 required
               />
             </div>
@@ -102,7 +102,7 @@ const Contacto = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-3 mt-2 border rounded-lg focus:outline-none focus:border-[#6A0DAD]"
+                className="w-full p-3 mt-2 border rounded-lg focus:outline-none text-[#333] focus:border-[#6A0DAD]"
                 rows={4}
                 required
               />
