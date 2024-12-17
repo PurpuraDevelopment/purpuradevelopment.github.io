@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --hero-background-light: #6A0DAD; /* Fondo morado en modo claro */
+  --hero-background-dark: #3B0764; /* Fondo morado en modo oscuro */
+  --primary-text-light: #171717; /* Texto principal en modo claro */
+  --primary-text-dark: #ededed; /* Texto principal en modo oscuro */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #3B0764; /* Fondo morado en modo oscuro */
+    --foreground: #ededed;
+    --hero-background-light: #3B0764; /* Fondo morado en modo oscuro */
+    --hero-background-dark: #6A0DAD; /* Fondo morado en modo claro */
+    --primary-text-light: #ededed; /* Texto principal en modo oscuro */
+    --primary-text-dark: #171717; /* Texto principal en modo claro */
+  }
+}
+
+/* Deshabilitar el caret (cursor de texto) */
+.modo-lectura * {
+  caret-color: transparent; /* Oculta la línea del cursor */
+}
+
+
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos de títulos principales */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #6A0DAD; /* Color morado para títulos */
+}
+
+/* Estilos para párrafos */
+p {
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--primary-text-light); /* Texto principal en modo claro */
+}
+
+/* Contenedores y tarjetas */
+.container, .card, .testimonial-card {
+  border-radius: 1.5rem; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo ligeramente gris para tarjetas */
+  color: #333; /* Color de texto más oscuro */
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover en los contenedores */
+.container:hover, .card:hover, .testimonial-card:hover {
+  transform: scale(1.05); /* Escala sutil al hacer hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  background-color: #e0e0e0; /* Fondo ligeramente más oscuro al hacer hover */
+}
+
+/* Estilos para los enlaces */
+a {
+  color: #6A0DAD; /* Color morado */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos de botones */
+button {
+  background-color: #6A0DAD; /* Color morado */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a0a9d; /* Morado más oscuro */
+}
+
+/* Fondo dinámico para el Hero */
+section#hero {
+  background: var(--hero-background-light); /* Fondo en modo claro por defecto */
+  color: var(--primary-text-light); /* Texto principal en modo claro */
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .testimonial-card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Animación suave de la transición */
+* {
+  box-sizing: border-box;
+}
