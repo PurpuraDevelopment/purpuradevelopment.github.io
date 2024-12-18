@@ -16,22 +16,6 @@ export default function RootLayout({
     <html lang="es">
       <body className={modoLectura ? "modo-lectura" : ""}>
         {children}
-        {/* Script para ElevenLabs Convai */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              var convaiScript = document.createElement('script');
-              convaiScript.src = "https://elevenlabs.io/convai-widget/index.js";
-              convaiScript.async = true;
-              document.body.appendChild(convaiScript);
-
-              var convaiWidget = document.createElement('elevenlabs-convai');
-              convaiWidget.setAttribute('agent-id', 'f1xPHVNUtPgjVjJBqYyj');
-              document.body.appendChild(convaiWidget);
-            `,
-          }}
-        ></script>
-
         {/* Widget de Tawk.to */}
         <script
           dangerouslySetInnerHTML={{
