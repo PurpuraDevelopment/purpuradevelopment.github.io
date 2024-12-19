@@ -26,14 +26,16 @@
       "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "types": ["node"] // Agregado para que reconozca tipos globales como `NextRequest` y `NextResponse`
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
     "next-env.d.ts",
-    "out/types/**/*.ts"
+    "out/types/**/*.ts",
+    "middleware.ts" // Asegura que el middleware sea incluido en el alcance de TypeScript
   ],
   "exclude": [
     "node_modules"
