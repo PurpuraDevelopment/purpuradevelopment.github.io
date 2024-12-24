@@ -1,4 +1,5 @@
 import "./globals.css";
+import "next/script"
 
 export const metadata = {
   title: "Purpura Development",
@@ -24,6 +25,16 @@ export default function RootLayout({
           })(window,document,'script','dataLayer','GTM-5NXQMV8B');`}
         </script>
         {/* End Google Tag Manager */}
+        
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRLLZWZY81"></script>
+        <script>
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-HRLLZWZY81');`}
+        </script>
       </head>
       <body className={modoLectura ? "modo-lectura" : ""}>
         {/* Google Tag Manager (noscript) */}
