@@ -38,6 +38,12 @@ const TecnologiasCarousel: React.FC = () => {
     }
   }, [isHovered]);
 
+  useEffect(() => {
+    if (currentIndex === tecnologias.length) {
+      setCurrentIndex(0);
+    }
+  }, [currentIndex]);
+
   return (
     <div>
       <div className="text-center py-20 px-4 bg-[#F8F9FA]">
