@@ -8,21 +8,21 @@ interface Tecnologia {
 }
 
 const tecnologias: Tecnologia[] = [
-  { id: 1,  logo: '/images/icons/nextjs.png' },
-  { id: 2,  logo: '/images/icons/astro.png' },
-  { id: 3,  logo: '/images/icons/react.png' },
-  { id: 4,  logo: '/images/icons/git.png' },
-  { id: 5,  logo: '/images/icons/vercel.png' },
-  { id: 6,  logo: '/images/icons/mysql.png' },
-  { id: 7,  logo: '/images/icons/wordpress.png' },
-  { id: 8,  logo: '/images/icons/chartjs.png' },
-  { id: 9,  logo: '/images/icons/tailwindcss.png' },
-  { id: 10, logo: '/images/icons/markdown.png' },
-  { id: 11, logo: '/images/icons/spring.png' },
-  { id: 12, logo: '/images/icons/typescript.png' },
-  { id: 13, logo: '/images/icons/java.png' },
-  { id: 14, logo: '/images/icons/python.png' },
-  { id: 15, logo: '/images/icons/javascript.png' },
+  { id: 1,  logo: '/images/nextjs.png' },
+  { id: 2,  logo: '/images/astro.png' },
+  { id: 3,  logo: '/images/react.png' },
+  { id: 4,  logo: '/images/git.png' },
+  { id: 5,  logo: '/images/vercel.png' },
+  { id: 6,  logo: '/images/mysql.png' },
+  { id: 7,  logo: '/images/wordpress.png' },
+  { id: 8,  logo: '/images/chartjs.png' },
+  { id: 9,  logo: '/images/tailwindcss.png' },
+  { id: 10, logo: '/images/markdown.png' },
+  { id: 11, logo: '/images/spring.png' },
+  { id: 12, logo: '/images/typescript.png' },
+  { id: 13, logo: '/images/java.png' },
+  { id: 14, logo: '/images/python.png' },
+  { id: 15, logo: '/images/javascript.png' },
 ];
 
 const TecnologiasCarousel: React.FC = () => {
