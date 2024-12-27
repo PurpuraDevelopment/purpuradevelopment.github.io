@@ -5,6 +5,7 @@ import Testimonios from "@/app/components/Testimonios";
 import Nosotros from "@/app/components/SobreNosotros";
 import Contacto from "@/app/components/Contacto";
 import Footer from "@/app/components/Footer";
+import Tecnologias from "@/app/components/Tecnologias";
 
 export default function Home() {
   
@@ -14,6 +15,7 @@ export default function Home() {
       <Servicios />
       <Portafolio />
       <Testimonios />
+      <Tecnologias />
       <Nosotros />
       <Contacto />
       <Footer />
