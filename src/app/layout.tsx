@@ -35,6 +35,13 @@ export default function RootLayout({
 
           gtag('config', 'G-HRLLZWZY81');`}
         </script>
+        <style>
+          {`
+            html {
+              scroll-behavior: smooth;
+            }
+          `}
+        </style>
       </head>
       <body className={modoLectura ? "modo-lectura" : ""}>
         {/* Google Tag Manager (noscript) */}
@@ -65,6 +72,22 @@ export default function RootLayout({
             `,
           }}
         ></script>
+        <script>
+          {`
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+              anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                  window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                  });
+                }
+              });
+            });
+          `}
+        </script>
       </body>
     </html>
   );
