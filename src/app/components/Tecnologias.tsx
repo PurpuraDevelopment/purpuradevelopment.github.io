@@ -59,14 +59,16 @@ const TecnologiasCarousel: React.FC = () => {
         <style jsx>{`
           .carousel {
             overflow: hidden;
-            width: 100%;
+            width: 105%;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: #f9f9f9; /* Light grey background */
             padding: 90px 0; /* Increase height */
-            padding-left: 200px; /* Remove left padding */
+            padding-top: 15px;
+            padding-left: 150px; /* Remove left padding */
             padding-right: 0px;
+            
         }
           .carousel-track {
             display: flex;
