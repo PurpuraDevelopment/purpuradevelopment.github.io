@@ -1,0 +1,69 @@
+/* styles/SurpriseMessage.module.css */
+
+.surprise {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #6a1b9a; /* Color morado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+  }
+  
+  .surprise h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600; /* Negrita */
+  }
+  
+  .surprise p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300; /* Ligera */
+    color: #6a1b9a; /* Color morado */
+  }
+  
+  .imageContainer {
+    margin: 1rem 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 600px) {
+    .surprise h1 {
+      font-size: 1.5rem;
+    }
+  
+    .surprise p {
+      font-size: 0.9rem;
+    }
+
+    .imageContainer {
+      margin: 0.5rem 0;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .surprise h1 {
+      font-size: 1.2rem;
+    }
+  
+    .surprise p {
+      font-size: 0.8rem;
+    }
+  
+    .imageContainer {
+      margin: 0.5rem 0;
+    }
+  }

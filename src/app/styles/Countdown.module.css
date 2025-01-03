@@ -1,0 +1,37 @@
+.countdown {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #6a1b9a; /* Tono morado oscuro */
+  padding: 20px;
+}
+
+.countdown h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.timer {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .countdown h2 {
+    font-size: 1rem;
+  }
+
+  .timer {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .countdown h2 {
+    font-size: 0.9rem;
+  }
+
+  .timer {
+    font-size: 1.8rem;
+  }
+}
+
