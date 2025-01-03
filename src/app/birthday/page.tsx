@@ -111,7 +111,8 @@ const Birthday = () => {
   };
 
   return (
-    <div className={`${styles.container} ${styles.backgroundPattern}`}>
+    <div className={styles.container}>
+      <div className={styles.backgroundPattern}></div>
       <Head>
         <title>Cuenta regresiva de cumpleaños</title>
         <meta name="description" content="Una sorpresa especial te espera" />
