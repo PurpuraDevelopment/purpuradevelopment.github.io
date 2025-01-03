@@ -59,8 +59,8 @@ const Birthday = () => {
   }, [timeRemaining]);
 
   useEffect(() => {
-    if (!config.clickToOpen && !audioPlayed && showSurprise) {
-      // Reproducir la música cuando la carta se abra (si `clickToOpen` es false)
+    if (showSurprise && !audioPlayed) {
+      // Reproducir la música cuando la carta se abra
       const audio = new Audio('/audio/music.mp3');
       audio.play();
       setAudioPlayed(true); // Actualiza el estado para indicar que la música ha sido reproducida
