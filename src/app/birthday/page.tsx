@@ -15,10 +15,14 @@ const Birthday = () => {
   const [timeRemaining, setTimeRemaining] = useState<number | null>(null);
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
   const [audioPlayed, setAudioPlayed] = useState(false); // Estado para controlar si la música ha sido reproducida
-
-  const isMobile = window.innerWidth <= 600;
+  const [isMobile, setIsMobile] = useState(false); // Estado para verificar si es móvil
 
   useEffect(() => {
+    // Verificar si es móvil cuando el componente se monta
+    if (typeof window !== 'undefined') {
+      setIsMobile(window.innerWidth <= 600);
+    }
+
     const calculateTimeRemaining = () => {
       const now = new Date();
       const [year, month, day] = config.targetDate.split('-').map(Number);
