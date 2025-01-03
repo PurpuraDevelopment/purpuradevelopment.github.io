@@ -49,6 +49,13 @@ const Birthday = () => {
     handleResize();
     window.addEventListener('resize', handleResize);
 
+    // Reproducir la música al entrar al sitio
+    if (!audioPlayed) {
+      const audio = new Audio('/audio/music.mp3');
+      audio.play();
+      setAudioPlayed(true); // Actualiza el estado para indicar que la música ha sido reproducida
+    }
+
     // Limpiar el intervalo cuando el tiempo llegue a 0
     return () => {
       clearInterval(timer);
