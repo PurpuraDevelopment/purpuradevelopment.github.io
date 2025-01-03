@@ -1,0 +1,7 @@
+.backgroundPattern {
+  background-image: url('/images/birthday-pattern.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}

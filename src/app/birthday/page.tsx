@@ -49,19 +49,28 @@ const Birthday = () => {
     handleResize();
     window.addEventListener('resize', handleResize);
 
-    // Reproducir la música al entrar al sitio
-    if (!audioPlayed) {
-      const audio = new Audio('/audio/music.mp3');
-      audio.play();
-      setAudioPlayed(true); // Actualiza el estado para indicar que la música ha sido reproducida
-    }
-
     // Limpiar el intervalo cuando el tiempo llegue a 0
     return () => {
       clearInterval(timer);
       window.removeEventListener('resize', handleResize);
     };
   }, []);  // Asegurarse de no reiniciar el conteo innecesariamente
+
+  useEffect(() => {
+    if (!audioPlayed) {
+      const audio = new Audio('/audio/music.mp3');
+      audio.loop = true; // Hacer que la música se reproduzca en bucle
+      audio.play().catch(() => {
+        // Handle autoplay restrictions
+        const handleUserInteraction = () => {
+          audio.play();
+          document.removeEventListener('click', handleUserInteraction);
+        };
+        document.addEventListener('click', handleUserInteraction);
+      });
+      setAudioPlayed(true); // Actualiza el estado para indicar que la música ha sido reproducida
+    }
+  }, [audioPlayed]);
 
   useEffect(() => {
     if (timeRemaining === 0) {
@@ -102,7 +111,7 @@ const Birthday = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${styles.backgroundPattern}`}>
       <Head>
         <title>Cuenta regresiva de cumpleaños</title>
         <meta name="description" content="Una sorpresa especial te espera" />
